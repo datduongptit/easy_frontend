@@ -1,0 +1,30 @@
+
+# dependencies
+/.pnp
+.pnp.js
+*/.vscode
+/vendor
+
+# testing
+/coverage
+
+# # production
+/front/build/*
+
+# misc
+.DS_Store
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs.txt
+
+#package json 
+/front/package-lock.json
+/package-lock.json
+
+#exported data
+/export
+
+# build file
+**/*.min.js

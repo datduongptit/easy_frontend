@@ -1,5 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable import/order */
+/* eslint-disable react/react-in-jsx-scope */
+import logo from "./logo.svg";
+import "./App.css";
+import UserList from "features/User/components/UserList";
 
 function App() {
   return (
@@ -9,6 +12,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <UserList />
         <a
           className="App-link"
           href="https://reactjs.org"

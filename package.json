@@ -9,6 +9,8 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
     "formik": "^2.2.9",
     "i18next": "^20.3.5",
     "i18next-browser-languagedetector": "^6.1.2",
@@ -34,13 +36,14 @@
     "yup": "^0.32.9"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npx eslint src && react-scripts start",
     "dev": "env-cmd -f .env.development react-scripts start",
     "build:staging": "env-cmd -f .env.staging react-scripts build",
     "build:qa": "env-cmd -f .env.qa react-scripts build",
     "build:production": "env-cmd -f .env.production react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "npx eslint src --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -62,6 +65,13 @@
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.2",
     "redux-devtools": "^3.7.0"
   }
 }
